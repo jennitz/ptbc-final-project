@@ -4,7 +4,10 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var FitbitStrategy = require('passport-fitbit-oauth2').FitbitOAuth2Strategy;
 var passport = require('passport');
+var request = require('request');
 var app = express();
+var list = [];
+var accessToken;
 
 app.use(cookieParser());
 app.use(bodyParser());
@@ -58,7 +61,19 @@ app.get('/auth/fitbit/callback', fitbitAuthenticate);
 
 app.get('/auth/fitbit/success', function(req, res, next) {
   res.send(req.user);
-  console.log();
+  accessToken = req.user.accessToken;
 });
+
+app.get('/fitbit/user*', function(req, res){
+  var baseUrl = 'https://api.fitbit.com/1';
+  var url = baseUrl + req.url.substring(req.url.indexOf('/user'));
+ 
+  request(url, { headers: {Authorization: `Bearer ${accessToken}`}}, function(err, response, body){
+    console.log(response.status, body);
+    res.json(JSON.parse(body));
+  })
+});
+
+app.use(express.static(__dirname + "/public"));
 
 app.listen(8080);
