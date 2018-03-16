@@ -1,6 +1,6 @@
 (function(){
   angular.module('app')
-    .component('Login', {
+    .component('login', {
       controller: 'LoginController',
       templateUrl: 'login/login.html'
     });
