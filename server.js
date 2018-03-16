@@ -10,7 +10,7 @@ app.use(cookieParser());
 app.use(bodyParser());
 
 app.use(session({ secret: 'keyboard cat' }));
-
+app.use(express.static(__dirname + '/public'));
 app.use(passport.initialize());
 app.use(passport.session({
   resave: false,
