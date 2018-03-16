@@ -4,56 +4,31 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <title>squad goals</title>
+  <title>Squad Goals app</title>
   <link href='index.css' rel='stylesheet' type='text/css' />
 </head>
 
 <body>
-
-  <div class="navbar">
-    <a class="active" href="#home">Home/Logo</a>
-    <a class="active" href="#about">About</a>
-    <a class="active" href="#dashboard">Dashboard</a>
-    <a class="active" href="#challenges">Challenges</a>
-    <a class="active" href="#badges">Badges</a>
-    <a class="active" href="#login"></a>
-    <a class="active" href="#logout"></a>
+  <div class='viewdiv'>
+    <ng-view></ng-view>
   </div>
 
-  <div class="photos">
-    <img src="">
-    <img src="">
-    <img src="">
-  </div>
-
-  <div id="about">
-    <h2>
-      SQUAD GOALS: promoting friendly and healthy competition in the workplace
-    </h2>
-    <h3>
-      #getlit #workit #squadgoals
-    </h3>
-  </div>
-
-  <footer id="footer">
-    <a href="https://www.fitbit.com">FITBIT LOGO</a>
-    <p id="contact">Contact Info: <a href="mailto:squadgoals@gmail.com">squadgoals@gmail.com</a></p>
-  </footer>
-
-</body>
-
-  <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js'></script>
-  <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <!-- <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js'></script> -->
   <script src='index.js'></script>
   <!-- <script src='factories/data-factory.js'></script>
   <script src='factories/api-factory.js'></script> -->
   <script src='home/home.js'></script>
   <script src='home/home-controller.js'></script>
+  <script src='login/login.js'></script>
+  <script src='login/login-controller.js'></script>
   <script src='dashboard/dashboard.js'></script>
   <script src='dashboard/dashboard-controller.js'></script>
   <script src='challenges/challenges.js'></script>
   <script src='challenges/challenges-controller.js'></script>
   <script src='badges/badges.js'></script>
   <script src='badges/badges-controller.js'></script>
+  <script src='routes.js'></script>
+
 </body>
 </html>

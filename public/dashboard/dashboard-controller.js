@@ -1,6 +1,6 @@
 (function(){
   angular.module('app')
-  .controller('DashboardController', function(APIFactory, DataFactory){
+  .controller('DashboardController', function(){
     var vm = this;
 
   });
