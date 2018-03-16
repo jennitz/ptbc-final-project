@@ -61,4 +61,6 @@ app.get('/auth/fitbit/success', function(req, res, next) {
   console.log();
 });
 
-app.listen(8080);
+app.listen(8080, function(){
+  console.log("Successful connection to 8080.")
+});
