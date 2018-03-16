@@ -1,6 +1,7 @@
 (function(){
   angular.module('app')
   .controller('DashboardController', function(APIFactory){
+
     var vm = this;
     vm.getData = function(){
       APIFactory.getFitBitProfile().then(function(result){
