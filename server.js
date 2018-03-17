@@ -54,23 +54,23 @@ passport.deserializeUser(function(obj, done) {
 var fitbitAuthenticate = passport.authenticate('fitbit', {
   successRedirect: '/auth/fitbit/success',
   failureRedirect: '/auth/fitbit/failure'
+  
 });
 
 app.get('/auth/fitbit', fitbitAuthenticate);
 app.get('/auth/fitbit/callback', fitbitAuthenticate);
 
 app.get('/auth/fitbit/success', function(req, res, next) {
-  res.send(req.user);
   accessToken = req.user.accessToken;
+  res.redirect('/');
+  
 });
-
 
 app.get('/fitbit/user*', function(req, res){
   var baseUrl = 'https://api.fitbit.com/1';
   var url = baseUrl + req.url.substring(req.url.indexOf('/user'));
  
   request(url, { headers: {Authorization: `Bearer ${accessToken}`}}, function(err, response, body){
-    console.log(response.status, body);
     res.json(JSON.parse(body));
   })
 });
