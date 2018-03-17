@@ -4,7 +4,8 @@
         var data;
         return{
             getFitBitProfile,
-            getSteps
+            getSteps,
+            getBadges
         
         };
            function getFitBitProfile (){
@@ -13,6 +14,9 @@
         }; 
         function getSteps(){
             return $http.get('/fitbit/user/-/activities/steps/date/today/1d.json');
+        };
+        function getBadges(){
+            return $http.get('/fitbit/user/-/badges.json');
         };
 
     });

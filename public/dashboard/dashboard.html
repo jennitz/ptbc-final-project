@@ -1,25 +1,27 @@
 <div class="navbar">
-  <a class="active" href="home">Home/Logo</a>
-  <a class="active" href="about">About</a>
-  <a class="active" href="dashboard">Dashboard</a>
-  <a class="active" href="challenges">Challenges</a>
-  <a class="active" href="badges">Badges</a>
+  <a class="active" href="#!/challenges">Challenges</a>
   <a id="loginlink" href="auth/fitbit">Log In</a>
-  <a id="logoutlink" href="logout">Log Out</a>
+  <a id="logoutlink" href="https://www.fitbit.com/logout">Log Out</a>
 </div>
 
 
 <div id= 'container'>
       <div id='logo'>#SquadGoals</div>
-
+      
 
       <ul> 
         <img src="{{$ctrl.user.user.avatar}}">
-        <li class="profile">Name: "{{$ctrl.user.user.name}}</li>
+        <li class="profile">Name: {{$ctrl.user.user.firstName}}</li>
         <li class='profile'>Age: {{$ctrl.user.user.age}} </li>
-        <li class="profile">Average Steps: </li>
-        <li class="profile">Fitbit Login </li>
+        <li class="profile">Average Steps: {{$ctrl.user.user.averageDailySteps}} </li>
+        <li class="profile">Today's Steps: {{$ctrl.steps['activities-steps'][0].value}} </li>
+        <input id="clickMe" type="button" value="clickme" ng-click="$ctrl.getDaily()" />
         
       </ul>
   </div>
+  <div id= 'container'>
+    <badges></badges>
+
+    
+</div>
 
