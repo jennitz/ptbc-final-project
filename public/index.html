@@ -9,10 +9,23 @@
 </head>
 
 <body>
+  <div class="navbar">
+    <a class="active" href="#!/">Home/Logo</a>
+    <a class="active" href="#!/about">About</a>
+    <a class="active" href="#!/dashboard">Dashboard</a>
+    <a class="active" href="#!/challenges">Challenges</a>
+    <a id="loginlink" href="auth/fitbit">Log In</a>
+    <a id="logoutlink" href="#!/">Log Out</a>
+  </div>
 
-  <div class='viewdiv'>
+  <div class='view'>
     <ng-view></ng-view>
   </div>
+
+  <footer id="footer">
+    <a id="fitbitlogo" href="https://www.fitbit.com">FITBIT LOGO</a>
+    <p id="contact">Contact Info: <a id="email" href="mailto:squadgoals@squadgoals.com">squadgoals@squadgoals.com</a></p>
+  </footer>
 
   <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js'></script>
   <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js'></script>
