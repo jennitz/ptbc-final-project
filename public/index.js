@@ -3,19 +3,19 @@
     .config(function($routeProvider){
       $routeProvider
         .when('/', {
-          templateUrl: 'home/home.html'
+          template: '<home></home>'
         })
         .when('/login', {
-          templateUrl: 'login/login.html'
+          template: '<login></login>'
         })
         .when('/dashboard', {
-          templateUrl: 'dashboard/dashboard.html'
+          template: '<dashboard></dashboard>'
         })
         .when('/challenges', {
-          templateUrl: 'challenges/challenges.html'
+          template: '<challenges></challenges>'
         })
         .when('/badges', {
-          templateUrl: 'badges/badges.html'
+          template: '<badges></badges>'
         })
 
     });
