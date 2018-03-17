@@ -62,7 +62,7 @@ app.get('/auth/fitbit/callback', fitbitAuthenticate);
 
 app.get('/auth/fitbit/success', function(req, res, next) {
   accessToken = req.user.accessToken;
-  res.redirect('/');
+  res.redirect('/#!/dashboard');
   
 });
 
