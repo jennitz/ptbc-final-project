@@ -1,10 +1,21 @@
- <div id= 'container'>
+<div class="navbar">
+  <a class="active" href="home">Home/Logo</a>
+  <a class="active" href="about">About</a>
+  <a class="active" href="dashboard">Dashboard</a>
+  <a class="active" href="challenges">Challenges</a>
+  <a class="active" href="badges">Badges</a>
+  <a id="loginlink" href="auth/fitbit">Log In</a>
+  <a id="logoutlink" href="logout">Log Out</a>
+</div>
+
+
+<div id= 'container'>
       <div id='logo'>#SquadGoals</div>
 
 
       <ul> 
         <img src="{{$ctrl.user.user.avatar}}">
-        <li class="profile">Name: </li>
+        <li class="profile">Name: "{{$ctrl.user.user.name}}</li>
         <li class='profile'>Age: {{$ctrl.user.user.age}} </li>
         <li class="profile">Average Steps: </li>
         <li class="profile">Fitbit Login </li>
