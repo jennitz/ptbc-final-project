@@ -181,3 +181,21 @@ font-size: 20px;
 .row:nth-child(3) {
   background: #cd7f32;
 }
+
+/*Dashboard-----Profile-------CSS-------*/
+#container{
+  margin: auto;
+  border: 2px solid black;
+  max-height: 600px;  
+}
+
+#logo{
+  float: right;
+  font-size: 22px;
+}
+
+.profile{
+
+  color: black;
+  font-size: 24px;
+}
