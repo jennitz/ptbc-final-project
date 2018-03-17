@@ -4,8 +4,12 @@ body {
   justify-content: center;
   color: dodgerblue;
   font-family: sans-serif;
+  min-height: 320px;
+  max-height: 100%;
+  width: 100%;
 }
 
+/* home page */
 .navbar {
   display: flex;
   position: fixed;
@@ -33,29 +37,40 @@ a {
 
 a:hover {
   color: pink;
-
 }
 
 a:active {
   background-color: grey;
-  /* text-decoration: none; */
 }
 
 .photos {
-  display: inline-block;
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+  margin-top: 500px;
+  margin: auto;
+  position: absolute;
   overflow: hidden;
 }
 
 img {
-  padding: 2px;
-  size: 500px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  width: 400px;
+  height: 330px;
+  margin: 0 auto;
 }
 
 #about {
-  display: block;
-
+  display: inline-block;
+  /* justify-content: center;
+  align-items: center; */
+  /* margin: 0 auto; */
+  flex-wrap: wrap;
+  padding: 10px;
+  /* margin-top: 700px; */
 }
 
 h2, h3 {
@@ -66,6 +81,7 @@ h2, h3 {
   font-family: sans-serif;
 }
 
+/* challenges page */
 .space {
   font-family: sans-serif;
   width: 100%;
@@ -83,30 +99,26 @@ h2, h3 {
 #footer {
   display: block;
   width: 100%;
-  margin: auto;
-  /* justify-content: flex-start; */
-  /* align-items: stretch ; */
+  margin: 0 auto;
   background-color: black;
   color: pink;
   font-family: sans-serif;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 20px;
   position: fixed;
+  left: 0;
   bottom: 0;
 }
 
 #fitbitlogo {
   margin: 0 auto;
-  padding: 10px;
   float: left;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
-#contact, #email {
-margin: 0 auto;
-padding: 10px;
+#contact {
+margin-bottom: 0;
 float: right;
-font-size: 20px;
+/* font-size: 20px; */
 }
 
 /* badges page */
@@ -186,7 +198,7 @@ font-size: 20px;
 #container{
   margin: auto;
   border: 2px solid black;
-  max-height: 600px;  
+  max-height: 600px;
 }
 
 #logo{
