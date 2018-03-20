@@ -148,6 +148,44 @@ float: right;
 
 /* challenges page */
 
+#centerTitle {
+  color: black;
+  text-align: center;
+  
+}
+
+#challengesLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#globalRanking {
+  border: solid 1px;
+  width: 300px;
+}
+
+#h2Global {
+  text-align: center;
+}
+
+#cityRanking {
+  border: solid 1px;
+  width: 300px;
+}
+
+#h2City {
+  text-align: center;
+}
+
+#dailyRanking {
+  border: solid 1px;
+  width: 300px;
+}
+
+#h2Daily {
+  text-align: center;
+}
 
 /*Dashboard-----Profile-------CSS-------*/
 #container{
