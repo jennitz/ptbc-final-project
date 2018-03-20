@@ -1,8 +1,5 @@
 body {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  color: dodgerblue;
   font-family: sans-serif;
   min-height: 320px;
   margin-bottom: 100px;
@@ -90,6 +87,7 @@ a:active {
 
 h2, h3 {
   display: flex;
+  align-content: center;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -145,13 +143,11 @@ float: right;
     text-align: center;
 }
 
-
 /* challenges page */
-
 #centerTitle {
   color: black;
   text-align: center;
-  
+
 }
 
 #challengesLayout {
