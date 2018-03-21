@@ -259,3 +259,41 @@ ul {
   font-size: 24px;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+/* badges */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.badgecontainer {
+    display: flex;
+    color: black;
+    height: 200px;
+    max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    margin: auto;
+}
+
+.fitbadge {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+
+#squadGoalsImg {
+  width: 150px;
+}
+>>>>>>> eab3faf36cdcce05e02cc5c4b857ca588c0c297d
