@@ -186,7 +186,7 @@ float: right;
   padding: 15px;
 }
 
-.fitbadge {
+/* .fitbadge {
     width: 100px;
     height: 100px;
     display: flex;
@@ -195,7 +195,7 @@ float: right;
     align-content: center;
     flex-direction: column;
     text-align: center;
-}
+} */
 
 /*Dashboard-----Profile-------CSS-------*/
 .dashboardcontainer {
@@ -236,17 +236,12 @@ ul {
 
 #badgebox {
   display: flex;
-  width: 48%;
-  height: 100%;
-  margin: 0 auto;
-  border: 2px solid black;
-  overflow: hidden;
-  float: right;
-  color: black;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
   align-content: center;
+  border: 2px solid black;
+  max-width: 325px;
+  height: 275px;
 }
 
 #logo {
@@ -259,8 +254,6 @@ ul {
   font-size: 24px;
   overflow: hidden;
 }
-<<<<<<< HEAD
-=======
 
 /* badges */
 .main {
@@ -273,12 +266,10 @@ ul {
 .badgecontainer {
     display: flex;
     color: black;
-    height: 200px;
-    max-width: 300px;
+    height: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: white;
-    border-radius: 50%;
     padding: 15px;
     margin: auto;
 }
@@ -287,6 +278,7 @@ ul {
     width: 100px;
     height: 100px;
     display: flex;
+    margin: 20px 0px;
     justify-content:center;
     align-content:center;
     flex-direction:column;
@@ -296,4 +288,3 @@ ul {
 #squadGoalsImg {
   width: 150px;
 }
->>>>>>> eab3faf36cdcce05e02cc5c4b857ca588c0c297d
