@@ -235,3 +235,7 @@ float: right;
     flex-direction:column;
     text-align: center;
 }
+
+#squadGoalsImg {
+  width: 150px;
+}
