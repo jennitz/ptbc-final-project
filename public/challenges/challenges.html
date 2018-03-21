@@ -2,52 +2,100 @@
     
     <div id="challengesLayout">
       <div id="globalRanking">
-        <h2 id="h2Gloabl">Global Ranking</h2>
+        <h2 id="h2Gloabl">#GlobalLeaderboard</h2>
         <hr>
        <ol>
-          <li>Google
+          <li>{{$ctrl.nike.name}} <img id="compLogo" src="{{$ctrl.nike.logo}}"/>
           <br>
-              Steps:
+              Steps: {{$ctrl.nike.totalSteps}}
           </li>
-          <li>Grand Circus
-          <br>
-              Steps:
-            
+          <li>{{$ctrl.ql.name}} <img id="compLogo" src="{{$ctrl.ql.logo}}"/>
+            <br>
+                Steps: {{$ctrl.ql.totalSteps}}
           </li>
-          
-       </ol>
+          <li>{{$ctrl.lc.name}} <img id="compLogo" src="{{$ctrl.lc.logo}}"/>
+            <br>
+                Steps: {{$ctrl.lc.totalSteps}}
+            </li>
+            <li>{{$ctrl.ua.name}} <img id="compLogo" src="{{$ctrl.ua.logo}}"/>
+                <br>
+                    Steps: {{$ctrl.ua.totalSteps}}
+                </li>  
+       <li>{{$ctrl.microsoft.name}} <img id="compLogo" src="{{$ctrl.microsoft.logo}}"/>
+                <br>
+                    Steps: {{$ctrl.microsoft.totalSteps}}
+                </li>
+                </ol>
       </div>
       
       <div id="cityRanking">
-        <h2 id="h2City">City Ranking</h2>
+        <h2 id="h2City">#CityLeaderboard</h2>
         <hr>
-       <ol>
-          <li>Google
-          <br>
-              Steps:
-          </li>
-          <li>Grand Circus
-          <br>
-              Steps:
-            
-          </li>
-          
+        <ol>
+            <li>{{$ctrl.nike.name}} <img id="compLogo" src="{{$ctrl.nike.logo}}"/>
+            <br>
+                Steps: {{$ctrl.nike.totalSteps}}
+            </li>
+            <li>{{$ctrl.ql.name}} <img id="compLogo" src="{{$ctrl.ql.logo}}"/>
+              <br>
+                  Steps: {{$ctrl.ql.totalSteps}}
+            </li>
+            <li>{{$ctrl.dt.name}} <img id="compLogo" src="{{$ctrl.dt.logo}}"/>
+                <br>
+                    Steps: {{$ctrl.dt.totalSteps}}
+                </li>
+            <li>{{$ctrl.lc.name}} <img id="compLogo" src="{{$ctrl.lc.logo}}"/>
+              <br>
+                  Steps: {{$ctrl.lc.totalSteps}}
+              </li>
+              <li>{{$ctrl.ua.name}} <img id="compLogo" src="{{$ctrl.ua.logo}}"/>
+                  <br>
+                      Steps: {{$ctrl.ua.totalSteps}}
+                  </li>
+                  </ol>
+        </div>
        </ol>
       </div>
       
        <div id="dailyRanking">
-        <h2 id="h2Daily">Daily Ranking</h2>
+        <h2 id="h2Daily">#MyCompanyLeaderboard</h2>
         <hr>
        <ol>
-          <li>Jane
+          <li>Mortgage Bankers
           <br>
-              Steps:
+              Steps: 15000
+              <br>
+              Current MVP: adlskjfdlsk with 4000 Steps
           </li>
-          <li>John
+
+          <li>Facilities
           <br>
-              Steps:
+              Steps: 45000
+              <br>
+              Current MVP: adlskjfdlsk with 8522 Steps
             
           </li>
+          <li>DLKDLKJ
+            <br>
+                Steps: 18574
+                <br>
+                Current MVP: adlskjfdlsk with 8522 Steps
+              
+            </li>
+            <li>dsafsdfdsf
+                <br>
+                    Steps: 28687
+                    <br>
+                    Current MVP: adlskjfdlsk with 8522 Steps
+                  
+                </li>
+                <li>adsfdfdfeegg
+                    <br>
+                        Steps: 13698
+                        <br>
+                        Current MVP: adlskjfdlsk with 8522 Steps
+                      
+                </li>
           
        </ol>
       </div>
