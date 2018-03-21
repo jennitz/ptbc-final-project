@@ -1,12 +1,13 @@
 <div class="navbar">
+  <a class="active" href="#!/">
+    <img src="/images/logo.png" id="squadGoalsImg">
+  </a>
   <a class="active" href="#!/challenges">Challenges</a>
-  <a id="loginlink" href="auth/fitbit">Log In</a>
   <a id="logoutlink" href="https://www.fitbit.com/logout">Log Out</a>
 </div>
 
-
+<div class="view">
 <div class='profilecontainer'>
-      <div id='logo'>#SquadGoals</div>
 
       <ul>
         <img id="avatar" src="{{$ctrl.user.user.avatar}}">
@@ -20,4 +21,5 @@
 
   <div class='badgecontainer'>
     <badges></badges>
+</div>
 </div>
