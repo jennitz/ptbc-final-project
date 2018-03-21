@@ -5,23 +5,19 @@
 </div>
 
 
-<div id= 'container'>
+<div id='profilecontainer'>
       <div id='logo'>#SquadGoals</div>
-      
 
-      <ul> 
-        <img src="{{$ctrl.user.user.avatar}}">
+      <ul>
+        <img id="avatar" src="{{$ctrl.user.user.avatar}}">
         <li class="profile">Name: {{$ctrl.user.user.firstName}}</li>
         <li class='profile'>Age: {{$ctrl.user.user.age}} </li>
         <li class="profile">Average Steps: {{$ctrl.user.user.averageDailySteps}} </li>
         <li class="profile">Today's Steps: {{$ctrl.steps['activities-steps'][0].value}} </li>
-        <input id="clickMe" type="button" value="clickme" ng-click="$ctrl.getDaily()" />
-        
+        <input id="clickMe" type="button" value="Click for Daily Steps" ng-click="$ctrl.getDaily()" />
       </ul>
-  </div>
-  <div id= 'container'>
-    <badges></badges>
-
-    
 </div>
 
+  <div id='badgecontainer'>
+    <badges></badges>
+</div>
