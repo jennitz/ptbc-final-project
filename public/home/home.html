@@ -7,12 +7,57 @@
   <a id="logoutlink" href="#!/logout">Log Out</a>
 </div> -->
 
+
+
+
+  <!-- <div class="photos">
+
 <div class="view">
   <div class="photos">
+
     <img src="https://www.nestle.com.sg/asset-library/PublishingImages/Media/NHW/nutrition_for_family/img_workplace_workout.jpg">
     <img src="https://img.purch.com/rc/300x211/aHR0cHM6Ly93d3cuYnVzaW5lc3MuY29tL2ltYWdlcy9jb250ZW50LzU2ZS8zMjA2ODMwODdiMWZmNWZkNWNjOGMvMC0yNDAwLQ==">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1p7jMhWRhj-uqpkwiS9rGAfEp6FCcbE6THx5zh04nQEXF2V2VQ">
   </div>
+ -->
+
+  <ui-carousel 
+  slides="$ctrl.slides"
+  slides-to-show="0"
+  slides-to-scroll="0"
+  initial-slide="1"
+  autoplay="false"
+  autoplay-speed="3000"
+  dots="true">
+  <!-- For slider render -->
+  <carousel-item>
+    <!-- placed your item content here -->
+    <img ng-src="{{ item.image }}" alt="{{ item.title }}" />
+   <!--  <h3> {{ item.name }} </h3>
+    <p> {{ item.description }} </h3> -->
+    <!-- end -->
+  </carousel-item>
+ 
+ 
+  <!-- For customize carousel next, previous button -->
+  <carousel-prev>
+    <!-- placed your previous button here -->
+    <button>Prev</button>
+    <!-- end -->
+  </carousel-prev>
+ 
+  <carousel-next>
+    <!-- placed your next button here -->
+    <button>Next</button>
+    <!-- end -->
+  </carousel-next>
+ 
+</ui-carousel>
+
+
+
+
+
 
   <div id="about">
     <h2>

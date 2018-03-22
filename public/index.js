@@ -1,5 +1,5 @@
 (function(){
-  angular.module('app', ['ngRoute'])
+  angular.module('app', ['ngRoute', 'ui.carousel'])
     .config(function($routeProvider){
       $routeProvider
         .when('/', {
@@ -16,6 +16,9 @@
         })
         .when('/badges', {
           template: '<badges></badges>'
+        })
+        .when('/about', {
+          template: '<about></about>'
         })
 
     });

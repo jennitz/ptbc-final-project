@@ -61,7 +61,12 @@ body {
   /* flex-direction: row; */
 }
 
-.photos {
+.carousel-item {
+  text-align: center;
+  width: 90%;
+}
+
+/*.photos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +83,7 @@ body {
   width: 450px;
   height: 330px;
   margin: 0 auto;
-}
+}*/
 
 #about {
   display: flex;
