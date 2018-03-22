@@ -1,34 +1,43 @@
 <div id="badgebox">
 
-    <div id="1" class="fitbadge">
+  <div id="1" class="fitbadge">
+    <div class="innerbadge">
       <p> {{$ctrl.badges.badges[0].shortName}}</p>
-     <img class="img50" src="{{$ctrl.badges.badges[0].image50px}}" />
-     <p>Times Completed:<br>{{$ctrl.badges.badges[0].timesAchieved}}</p>
-
+      <img class="img50" src="{{$ctrl.badges.badges[0].image50px}}" />
+      <p id="timescompleted">Times Completed:<br>{{$ctrl.badges.badges[0].timesAchieved}}</p>
     </div>
+  </div>
 
-    <div id="2" class="fitbadge">
+  <div id="2" class="fitbadge">
+    <div class="innerbadge">
       <p> {{$ctrl.badges.badges[1].shortName}}</p>
       <img class="img50" src="{{$ctrl.badges.badges[1].image50px}}" />
-     <p>Times Completed: {{$ctrl.badges.badges[1].timesAchieved}}</p>
+      <p id="timescompleted">Times Completed: {{$ctrl.badges.badges[1].timesAchieved}}</p>
     </div>
+  </div>
 
-    <div id="3" class="fitbadge">
+  <div id="3" class="fitbadge">
+    <div class="innerbadge">
       <p> {{$ctrl.badges.badges[2].shortName}}</p>
       <img class="img50" src="{{$ctrl.badges.badges[2].image50px}}" />
-     <p>Times Completed: {{$ctrl.badges.badges[2].timesAchieved}}</p>
+      <p id="timescompleted">Times Completed: {{$ctrl.badges.badges[2].timesAchieved}}</p>
     </div>
+  </div>
 
-    <div class="fitbadge">
+  <div class="fitbadge">
+    <div class="innerbadge">
       <p> {{$ctrl.badges.badges[3].shortName}}</p>
       <img class="img50" src="{{$ctrl.badges.badges[3].image50px}}" />
-     <p>Times Completed: {{$ctrl.badges.badges[3].timesAchieved}}</p>
+      <p id="timescompleted">Times Completed: {{$ctrl.badges.badges[3].timesAchieved}}</p>
     </div>
+  </div>
 
-    <div class="fitbadge">
+  <div class="fitbadge">
+    <div class="innerbadge">
       <p> {{$ctrl.badges.badges[4].shortName}}</p>
       <img class="img50"src="{{$ctrl.badges.badges[4].image50px}}" />
-     <p>Times Completed: {{$ctrl.badges.badges[4].timesAchieved}}</p>
+      <p id="timescompleted">Times Completed: {{$ctrl.badges.badges[4].timesAchieved}}</p>
     </div>
+  </div>
 
 </div>
