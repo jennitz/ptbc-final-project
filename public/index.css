@@ -208,6 +208,10 @@ ul {
   font-size: 24px;
   overflow: hidden;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0704ce7eb462e63c158c657a6e8e369efbe13c19
 
 /* badges */
 #badgebox {
@@ -251,3 +255,29 @@ ul {
   display: flex;
   flex-direction: row;
 }
+<<<<<<< HEAD
+
+/*don't mess with these*/
+.carousel {
+  overflow-x: hidden;
+  width: 100%;
+  height: 500px;  /*you may need to change this*/
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  transition: left ease .5s;
+  left: 0;
+}
+
+.next {
+  left: 100%;
+  visibility: hidden;
+}
+
+.prev {
+  left: -100%;
+}
+=======
+>>>>>>> 0704ce7eb462e63c158c657a6e8e369efbe13c19
