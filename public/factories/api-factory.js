@@ -5,7 +5,8 @@
         return{
             getFitBitProfile,
             getSteps,
-            getBadges
+            getBadges,
+            getWeeklySteps
         
         };
            function getFitBitProfile (){
@@ -17,6 +18,9 @@
         };
         function getBadges(){
             return $http.get('/fitbit/user/-/badges.json');
+        };
+        function getWeeklySteps(){
+            return $http.get('/fitbit/user/-/activities/steps/date/2018-03-01/2018-03-31.json');
         };
 
     });
