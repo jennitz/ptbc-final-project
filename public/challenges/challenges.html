@@ -1,3 +1,12 @@
+<div class="navbar">
+    <a class="active" href="#!/">
+        <img src="/images/logo.png" id="squadGoalsImg">
+      </a>
+    <a class="active" href="#!/dashboard">Challenges</a>
+    <a id="logoutlink" href="https://www.fitbit.com/logout">Log Out</a>
+  </div>
+  
+<div class="view">
 <div id="centerTitle"><h1>Challenges</h1></div>
     
     <div id="challengesLayout">
@@ -5,26 +14,12 @@
         <h2 id="h2Gloabl">#GlobalLeaderboard</h2>
         <hr>
        <ol>
-          <li>{{$ctrl.nike.name}} <img id="compLogo" src="{{$ctrl.nike.logo}}"/>
+          <li ng-repeat="name in $ctrl.companyUSA | orderBy:$ctrl.sorterFunc">{{name.name}} <img id="compLogo" src="{{name.logo}}"/>
           <br>
-              Steps: {{$ctrl.nike.totalSteps}}
+              Steps: {{name.totalSteps | number}}
           </li>
-          <li>{{$ctrl.ql.name}} <img id="compLogo" src="{{$ctrl.ql.logo}}"/>
-            <br>
-                Steps: {{$ctrl.ql.totalSteps}}
-          </li>
-          <li>{{$ctrl.lc.name}} <img id="compLogo" src="{{$ctrl.lc.logo}}"/>
-            <br>
-                Steps: {{$ctrl.lc.totalSteps}}
-            </li>
-            <li>{{$ctrl.ua.name}} <img id="compLogo" src="{{$ctrl.ua.logo}}"/>
-                <br>
-                    Steps: {{$ctrl.ua.totalSteps}}
-                </li>  
-       <li>{{$ctrl.microsoft.name}} <img id="compLogo" src="{{$ctrl.microsoft.logo}}"/>
-                <br>
-                    Steps: {{$ctrl.microsoft.totalSteps}}
-                </li>
+          
+     
                 </ol>
       </div>
       
@@ -32,30 +27,13 @@
         <h2 id="h2City">#CityLeaderboard</h2>
         <hr>
         <ol>
-            <li>{{$ctrl.nike.name}} <img id="compLogo" src="{{$ctrl.nike.logo}}"/>
-            <br>
-                Steps: {{$ctrl.nike.totalSteps}}
-            </li>
-            <li>{{$ctrl.ql.name}} <img id="compLogo" src="{{$ctrl.ql.logo}}"/>
-              <br>
-                  Steps: {{$ctrl.ql.totalSteps}}
-            </li>
-            <li>{{$ctrl.dt.name}} <img id="compLogo" src="{{$ctrl.dt.logo}}"/>
+            <li ng-repeat="name in $ctrl.companyDET | orderBy:$ctrl.sorterFunc">{{name.name}} <img id="compLogo" src="{{name.logo}}"/>
                 <br>
-                    Steps: {{$ctrl.dt.totalSteps}}
+                    Steps: {{name.totalSteps | number}}
                 </li>
-            <li>{{$ctrl.lc.name}} <img id="compLogo" src="{{$ctrl.lc.logo}}"/>
-              <br>
-                  Steps: {{$ctrl.lc.totalSteps}}
-              </li>
-              <li>{{$ctrl.ua.name}} <img id="compLogo" src="{{$ctrl.ua.logo}}"/>
-                  <br>
-                      Steps: {{$ctrl.ua.totalSteps}}
-                  </li>
                   </ol>
         </div>
        </ol>
-      </div>
       
        <div id="dailyRanking">
         <h2 id="h2Daily">#MyCompanyLeaderboard</h2>
@@ -101,3 +79,4 @@
       </div>
           
     </div>
+</div>
