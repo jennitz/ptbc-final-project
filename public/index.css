@@ -208,10 +208,7 @@ ul {
   font-size: 24px;
   overflow: hidden;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 0704ce7eb462e63c158c657a6e8e369efbe13c19
 
 /* badges */
 #badgebox {
@@ -255,7 +252,7 @@ ul {
   display: flex;
   flex-direction: row;
 }
-<<<<<<< HEAD
+
 
 /*don't mess with these*/
 .carousel {
@@ -279,5 +276,5 @@ ul {
 .prev {
   left: -100%;
 }
-=======
->>>>>>> 0704ce7eb462e63c158c657a6e8e369efbe13c19
+
+
