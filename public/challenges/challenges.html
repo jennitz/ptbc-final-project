@@ -14,7 +14,7 @@
         <h2 id="h2Gloabl">#GlobalLeaderboard</h2>
         <hr>
        <ol>
-          <li ng-repeat="name in $ctrl.companyUSA | orderBy:$ctrl.sorterFunc">{{name.name}} <img id="compLogo" src="{{name.logo}}"/>
+          <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}} <img id="compLogo" src="{{name.logo}}"/>
           <br>
               Steps: {{name.totalSteps | number}}
           </li>
@@ -27,7 +27,7 @@
         <h2 id="h2City">#CityLeaderboard</h2>
         <hr>
         <ol>
-            <li ng-repeat="name in $ctrl.companyDET | orderBy:$ctrl.sorterFunc">{{name.name}} <img id="compLogo" src="{{name.logo}}"/>
+            <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}} <img id="compLogo" src="{{name.logo}}"/>
                 <br>
                     Steps: {{name.totalSteps | number}}
                 </li>

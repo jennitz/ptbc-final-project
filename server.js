@@ -1,6 +1,7 @@
 var express = require('express');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var detailRoutes = require('./detail-routes');
 var session = require('express-session');
 var FitbitStrategy = require('passport-fitbit-oauth2').FitbitOAuth2Strategy;
 var passport = require('passport');
@@ -11,6 +12,7 @@ var accessToken;
 
 app.use(cookieParser());
 app.use(bodyParser());
+app.use('/api', detailRoutes);
 
 app.use(session({ secret: 'keyboard cat' }));
 app.use(express.static(__dirname + '/public'));
