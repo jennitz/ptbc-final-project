@@ -12,12 +12,19 @@
 
       <ul>
         <img id="avatar" src="{{$ctrl.user.user.avatar}}">
+        <br />
         <li class="profile">Name: {{$ctrl.user.user.firstName}}</li>
+        <br />
         <li class='profile'>Age: {{$ctrl.user.user.age}} </li>
+        <br />
         <li class="profile">Average Steps: {{$ctrl.user.user.averageDailySteps}} </li>
+        <br />
         <li class="profile">Today's Steps: {{$ctrl.steps['activities-steps'][0].value}} </li>
+        <br />
         <input id="clickMe" type="button" value="Click for Daily Steps" ng-click="$ctrl.getDaily()" />
+        <br />
       </ul>
+
 </div>
 
 <badges></badges>
