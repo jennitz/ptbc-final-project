@@ -144,6 +144,9 @@ float: right;
 #centerTitle {
   color: black;
   text-align: center;
+  background: linear-gradient(rgb(110, 110, 110), rgb(219, 219, 219));
+  /* border-radius: 20%; */
+  border-style: double;
 }
 
 #challengesLayout {
@@ -153,8 +156,9 @@ float: right;
 }
 
 #globalRanking {
-  border: solid 1px;
+  /* border: solid 1px; */
   width: 300px;
+  background-color: cadetblue;
 }
 
 #h2Global {
@@ -164,6 +168,7 @@ float: right;
 #cityRanking {
   border: solid 1px;
   width: 300px;
+  background-color: cadetblue;
 }
 
 #h2City {
@@ -173,6 +178,7 @@ float: right;
 #dailyRanking {
   border: solid 1px;
   width: 300px;
+  background-color: cadetblue;
 }
 
 #h2Daily {
