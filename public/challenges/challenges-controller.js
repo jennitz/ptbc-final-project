@@ -2,21 +2,7 @@
   angular.module('app')
     .controller('ChallengesController', function(APIFactory,DataFactory){
       var vm = this;
-      vm.getDetails = function(){
-        DataFactory.getDetails().then(function(result){
-            vm.company = result.data;
-            console.log(result);
-           
-            
-        });
-    };
-    vm.getDetails();
-    
-     
-       
-      vm.sorterFunc = function(name){
-                          return -parseInt(name.totalSteps);
-                      };
+   
 
       vm.getWeekly = function(){
             APIFactory.getWeeklySteps().then(function(result){
@@ -25,12 +11,48 @@
                 }).reduce(function(prev, curr){
                   return prev + curr;
                 }, 0);
-                console.log(vm.steps);
+                DataFactory.patch(1,  {
+                
+                      "challengeSteps" : vm.steps
+                }
+              )
+              
                 });
                
       
     };
-vm.getWeekly();
+    vm.getWeekly();
+    vm.getEmpDetails = function(){
+      DataFactory.getEmp().then(function(result){
+         vm.empSteps = result.data.challengeSteps.map(function(activity){
+            return parseInt(activity.value);
+          }).reduce(function(prev, curr){
+            return prev + curr;
+          }, 0);
+          console.log(empSteps);
+          
+          
+                                
+        
+                                
+    });
+         
+         
+          
+      };
+    vm.getEmpDetails();
+    vm.getDetails = function(){
+      DataFactory.getDetails().then(function(result){
+          vm.company = result.data;
+          console.log(result);
+         
+          
+      });
+    };
+    vm.sorterFunc = function(name){
+      return -parseInt(name.totalSteps);
+  };
+    vm.getDetails();
 
 
 

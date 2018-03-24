@@ -5,21 +5,20 @@ var company = require('./detail');
 router.get('/detail',function(req,res){
     res.json(company.details);
 });
-router.post('/detail',function(req,res){
-    var newCompany = {id: ++company.currentID, name: req.body.name, totalSteps: req.body.totalSteps};
-    company.detail.push(newCompany);
-    res.status(201).json(newCompany);
+router.get('/employee',function(req,res){
+    res.json(company.employeeDetails);
 });
+
 router.patch('/detail/:id',function(req,res){
-    var detail = getList(req.params.id);
-    if(!detail){
+    var details = getList(req.params.id);
+    if(!details){
         return res.sendStatus(404);
     }
-    update(detail, req.body.totalSteps);
-    res.status(202).json(detail);
+    update(details, req.body);
+    res.status(202).json(details);
 });
 function getList (id){
-    return company.detail.find(function(item){
+    return company.employeeDetails.find(function(item){
          return item.id == id;
      });
  };
