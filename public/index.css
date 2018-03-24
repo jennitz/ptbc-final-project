@@ -17,7 +17,7 @@ body {
 
 /* ----------home page */
 .navbar {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -144,6 +144,7 @@ padding-right: 0px;
   background: linear-gradient(rgb(110, 110, 110), rgb(219, 219, 219));
   /* border-radius: 20%; */
   border-style: double;
+  margin-right: 1%;
 }
 
 #challengesLayout {
@@ -155,31 +156,44 @@ padding-right: 0px;
 #globalRanking {
   /* border: solid 1px; */
   width: 300px;
-  background-color: cadetblue;
+  background: linear-gradient(rgb(84, 139, 141), rgb(119, 196, 199));
+  border-style: double;
+  border-color: midnightblue;
 }
 
 #h2Global {
   text-align: center;
+  color: black;
 }
 
 #cityRanking {
-  border: solid 1px;
+  /* border: solid 1px; */
   width: 300px;
-  background-color: cadetblue;
+  background: linear-gradient(rgb(84, 139, 141), rgb(119, 196, 199));
+  border-style: double;
+  border-color: midnightblue;
 }
 
 #h2City {
   text-align: center;
+  color: black;
 }
 
 #dailyRanking {
-  border: solid 1px;
+  /* border: solid 1px; */
   width: 300px;
-  background-color: cadetblue;
+  background: linear-gradient(rgb(84, 139, 141), rgb(119, 196, 199));
+  border-style: double;
+  border-color: midnightblue;
 }
 
 #h2Daily {
   text-align: center;
+  color: black;
+}
+
+hr {
+  border-color: midnightblue;
 }
 
 #compLogo {
@@ -367,4 +381,41 @@ ul {
     display: block;
     text-align: center;
   }
+}
+
+/* --------Log in Page  */
+#logindiv {
+  background: linear-gradient(rgb(146, 146, 146),rgb(226, 226, 226));
+  margin: auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  padding: 20%;
+
+}
+
+#innerLogDiv {
+  background-color: cadetblue;
+  width: 50%;
+  padding: 8%;
+  border-style: double;
+  border-radius: 5%;
+}
+
+#userLogBtn {
+  background-color: goldenrod;
+  text-align: center;
+}
+
+#userCancelBtn {
+  background-color: red;
+  text-align: center;
+}
+
+#enterInput {
+  width: 98%;
+}
+
+#passwordInput {
+  width: 98%;
 }
