@@ -202,7 +202,7 @@ padding-right: 0px;
   overflow: hidden;
   width: 300px;
   padding: 10px;
-  background-color: rgb(95, 158, 160, 0.5);
+  background-color: rgba(95, 158, 160, 0.5);
   color: black;
   border-radius: 12px;
 }
@@ -212,7 +212,7 @@ padding-right: 0px;
   border-radius: 50%;
   overflow: hidden;
   padding: 20px;
-  background-color: rgb(25, 25, 112, 0.75);
+  background-color: rgba(25, 25, 112, 0.75);
 }
 
 ul {
@@ -241,7 +241,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  background-color: rgb(95, 158, 160, 0.5);
+  background-color: rgba(95, 158, 160, 0.5);
   color: black;
   margin: 10px;
   min-width: 300px;
