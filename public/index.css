@@ -22,7 +22,7 @@ body {
   top: 0;
   width: 100%;
   font-family: sans-serif;
-  margin: auto;
+  margin: 0 auto;
   background-color: black;
   padding: 10px;
   height: 90px;
@@ -32,6 +32,8 @@ body {
 
 #loginlink, #logoutlink {
   float: right;
+  margin: 0 auto;
+  margin-right: 20px;
 }
 
 a {
