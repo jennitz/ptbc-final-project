@@ -14,9 +14,6 @@
         .when('/challenges', {
           template: '<challenges></challenges>'
         })
-        .when('/badges', {
-          template: '<badges></badges>'
-        })
         .when('/about', {
           template: '<about></about>'
         })
