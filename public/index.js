@@ -17,6 +17,9 @@
         .when('/about', {
           template: '<about></about>'
         })
+        .when('/department',{
+          template: '<department></department>'
+        })
 
     });
 

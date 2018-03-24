@@ -15,6 +15,7 @@ router.patch('/detail/:id',function(req,res){
         return res.sendStatus(404);
     }
     update(details, req.body);
+    company.updateDetails();
     res.status(202).json(details);
 });
 function getList (id){
