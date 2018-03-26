@@ -3,12 +3,12 @@
     <img src="/images/logo.png" id="squadGoalsImg">
   </a>
   <a class="active" href="#!/challenges">Challenges</a>
-  <a id="logoutlink" href="https://www.fitbit.com/logout">Log Out</a>
+  <a class="active" id="logoutlink" href="https://www.fitbit.com/logout">Log Out</a>
 </div>
 
 <div class="view">
-<div class="dashFlex">
-<div class='profilecontainer'>
+  <div class="dashFlex">
+    <div class='profilecontainer'>
 
       <ul>
         <img id="avatar" src="{{$ctrl.user.user.avatar}}">
@@ -20,15 +20,14 @@
         <li class="profile">Average Steps: {{$ctrl.user.user.averageDailySteps}} </li>
         <br />
         <li class="profile">Today's Steps: {{$ctrl.steps['activities-steps'][0].value}} </li>
-        <br />
         <input id="clickme" type="button" value="Click for Daily Steps" ng-click="$ctrl.getDaily()" />
         <br />
       </ul>
 
-</div>
-<br />
+    </div>
+    <br />
 
-<badges></badges>
+    <badges></badges>
 
-</div>
+  </div>
 </div>
