@@ -74,16 +74,16 @@ a:hover {
  /* ----------blurb on home page */
 #blurb {
   display: block;
-  /* justify-content: center;
-  align-content: center; */
   text-align: center;
-  bottom: 70px;
+  background-color: rgba(25, 25, 112, 0.5);
+  bottom: 300px;
+  left: 200px;
   z-index: 2;
-  overflow: hidden;
+  position: absolute;
 }
 
 h2, h3 {
-  color: cornflowerblue;
+  color: white;
   font-family: sans-serif;
 }
 
@@ -148,6 +148,8 @@ padding-right: 0px;
   /* border-radius: 20%; */
   border-style: double;
   margin-right: 1%;
+  right: 0;
+  top: 0;
 }
 
 #challengesLayout {
@@ -215,11 +217,12 @@ hr {
   width: 100%;
   background-color: rgb(21, 21, 94);
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: -1;
-  margin: 0px;
-  
+  margin: 0;
+  bottom: 0;
+
 }
 
 /* -----------dashboard page*/
@@ -306,7 +309,7 @@ ul {
 .carousel {
   overflow-x: hidden;
   width: 100%;
-  height: 400px;  /*you may need to change this*/
+  height: 320px;  /*you may need to change this*/
 }
 
 .carousel-item {
@@ -325,9 +328,10 @@ ul {
   left: -100%;
 }
 
-#picture{
-  width: 50%
+#picture {
+  width: 70%;
 }
+
 /*##Device = Desktops
   ##Screen = 1281px to higher resolution desktops*/
 @media (min-width: 1281px) {
