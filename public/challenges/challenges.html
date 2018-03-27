@@ -1,109 +1,81 @@
 <div class="navbar">
-        <a class="active" href="#!/">
-            <img src="/images/logo.png" id="squadGoalsImg">
-          </a>
-        <a class="active" href="#!/dashboard">Dashboard</a>
-        <a id="logoutlink" href="https://www.fitbit.com/logout">Log Out</a>
+    <a class="active" href="#!/">
+        <img src="/images/logo.png" id="squadGoalsImg">
+      </a>
+    <a class="active" href="#!/dashboard">Dashboard</a>
+    <a id="logoutlink" href="https://www.fitbit.com/logout">Log Out</a>
+  </div>
+  
+<div class="view">
+<div id="centerTitle"><h1>Challenges</h1></div>
+    
+    <div id="challengesLayout">
+      <div id="globalRanking">
+        <h2 id="h2Gloabl">#CityLeaderboard</h2>
+        <hr>
+       <ol>
+          <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}} <img id="compLogo" src="{{name.logo}}"/>
+          <br>
+              Steps: {{name.totalSteps | number}}
+          </li>
+          
+     
+                </ol>
       </div>
       
-      <div id="challengeBg"></div>
-    <div class="view">
-    <div id="centerTitle"><h1>Challenges</h1></div>
-        
-        <div id="challengesLayout">
-          <div id="globalRanking">
-            <h2 id="h2Global">#GlobalLeaderboard</h2>
-            <hr>
-           <ol>
-              <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}}
-                <div id="compDiv">
-                    <img id="compLogo" src="{{name.logo}}"/>
-                </div>  
-                Steps: {{name.totalSteps | number}}
-            </li>
-
-            
-            <br>
-         
-                    </ol>
-          </div>
-          
-          <div id="cityRanking">
-            <h2 id="h2City">#CityLeaderboard</h2>
-            <hr>
-            <ol>
-                <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}} 
-                    <div id="compDiv">
-                        <img id="compLogo" src="{{name.logo}}"/>
-                    </div>
+      <div id="cityRanking">
+        <h2 id="h2City">#MyCompany</h2>
+        <hr>
+        <ol>
+            <li ng-repeat="emp in $ctrl.emp | orderBy:$ctrl.sorterFunc">{{emp.name}}
+                <br>
                     Steps: {{name.totalSteps | number}}
                 </li>
-                    
-                <br>
-                      </ol>
-            </div>
-           </ol>
-          
-           <div id="dailyRanking">
-            <h2 id="h2Daily">#MyCompanyLeaderboard</h2>
-            <hr>
-           <ol>
-               <div id="listDiv">
-              <li>Students
-              <br>
-                  Steps: {{$ctrl.company[0].totalSteps}}
-                </div>
-
-        
-              </li>
+                  </ol>
+        </div>
+       </ol>
+      
+       <div id="dailyRanking">
+        <h2 id="h2Daily">#MyCompanyLeaderboard</h2>
+        <hr>
+       <ol>
+          <li>Students
+          <br>
+              Steps: {{$ctrl.emp[0].ChallengeSteps}}
     
-                <div id="listDiv">
+          </li>
 
-                  <li>Instructors
-                      <br>
-                      Steps: 45000
-                      <br>
-                      Current MVP: adlskjfdlsk with 8522 Steps
-                      
-                    </li>
-                </div>
-
-                <div id="listDiv">
-
-                    <li>Admissions
-                        <br>
-                        Steps: 18574
-                        <br>
-                        Current MVP: adlskjfdlsk with 8522 Steps
-                        
-                    </li>
-                </div>
-
-                <div>
-
-                    <li>Company Outreach
-                        <br>
-                        Steps: 28687
-                        <br>
-                        Current MVP: adlskjfdlsk with 8522 Steps
-                        
-                    </li>
-                </div>
-
-                <div id="listDiv">
-
-                    <li>Marketing
-                        <br>
+          <li>Instructors
+          <br>
+              Steps: 45000
+              <br>
+              Current MVP: adlskjfdlsk with 8522 Steps
+            
+          </li>
+          <li>Admissions
+            <br>
+                Steps: 18574
+                <br>
+                Current MVP: adlskjfdlsk with 8522 Steps
+              
+            </li>
+            <li>Company Outreach
+                <br>
+                    Steps: 28687
+                    <br>
+                    Current MVP: adlskjfdlsk with 8522 Steps
+                  
+                </li>
+                <li>Marketing
+                    <br>
                         Steps: 13698
                         <br>
                         Current MVP: adlskjfdlsk with 8522 Steps
-                        
-                    </li>
-                </div>
-              
-           </ol>
-          </div>
-              
-        </div>
-       
+                      
+                </li>
+          
+       </ol>
+      </div>
+          
     </div>
+</div>
