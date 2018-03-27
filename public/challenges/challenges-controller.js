@@ -15,6 +15,7 @@
                 "challengeSteps" : vm.steps
                 }).then(function(){
                   vm.getDetails();
+                  vm.getEmpDetails();
                 });
               
                 });
@@ -42,7 +43,11 @@
     vm.sorterFunc = function(name){
       return -parseInt(name.totalSteps);
   };
+  vm.sorterFuncemp = function(emp){
+    return -parseInt(emp.challengeSteps);
+};
     vm.getDetails();
+    vm.getEmpDetails();
 
 
 

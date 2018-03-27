@@ -12,7 +12,7 @@
     
     <div id="challengesLayout">
       <div id="globalRanking">
-        <h2 id="h2Global">#GlobalLeaderboard</h2>
+        <h2 id="h2Global">#CityLeaderboard</h2>
         <hr>
        <ol>
           <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}}
@@ -29,79 +29,79 @@
       </div>
       
       <div id="cityRanking">
-        <h2 id="h2City">#CityLeaderboard</h2>
+        <h2 id="h2City">#MyCompanyLeaderboard</h2>
         <hr>
         <ol>
-            <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}} 
-                <div id="compDiv">
-                    <img id="compLogo" src="{{name.logo}}"/>
-                </div>
-                Steps: {{name.totalSteps | number}}
-            </li>
-                
-            <br>
-                  </ol>
+            <div id="listDiv">
+           <li>Students
+           <br>
+               Steps: {{$ctrl.company[0].totalSteps | number}}
+               <br>
+               Current MVP: {{$ctrl.emp[0].name}} with {{$ctrl.emp[0].challengeSteps | number}} steps
+     
+           </li>
+ 
+             <div id="listDiv">
+ 
+               <li>Instructors
+                   <br>
+                   Steps: 227,891
+                   <br>
+                   Current MVP: Kim with 89,678 steps
+                   
+                 </li>
+             </div>
+ 
+             <div id="listDiv">
+ 
+                 <li>Admissions
+                     <br>
+                     Steps: 215,587
+                     <br>
+                     Current MVP: Ian with 78,968 steps
+                     
+                 </li>
+             </div>
+ 
+             <div>
+ 
+                 <li>Company Outreach
+                     <br>
+                     Steps: 185,689
+                     <br>
+                     Current MVP: Cody with 89,597 steps
+                     
+                 </li>
+             </div>
+ 
+             <div id="listDiv">
+ 
+                 <li>Marketing
+                     <br>
+                     Steps: 145,698
+                     <br>
+                     Current MVP: Bill with 85,229 steps
+                     
+                 </li>
+             </div>
+           
+        </ol>
         </div>
-       </ol>
       
        <div id="dailyRanking">
-        <h2 id="h2Daily">#MyCompanyLeaderboard</h2>
+        <h2 id="h2Daily">#Students</h2>
         <hr>
-       <ol>
-           <div id="listDiv">
-          <li>Students
-          <br>
-              Steps: {{$ctrl.company[0].totalSteps}}
-            </div>
-
-    
+        <ol>
+            <li ng-repeat="emp in $ctrl.emp | orderBy:$ctrl.sorterFuncemp">{{emp.name}}
+             
+              Steps: {{emp.challengeSteps | number}}
           </li>
-
-            <div id="listDiv">
-
-              <li>Instructors
-                  <br>
-                  Steps: 45000
-                  <br>
-                  Current MVP: adlskjfdlsk with 8522 Steps
-                  
-                </li>
-            </div>
-
-            <div id="listDiv">
-
-                <li>Admissions
-                    <br>
-                    Steps: 18574
-                    <br>
-                    Current MVP: adlskjfdlsk with 8522 Steps
-                    
-                </li>
-            </div>
-
-            <div>
-
-                <li>Company Outreach
-                    <br>
-                    Steps: 28687
-                    <br>
-                    Current MVP: adlskjfdlsk with 8522 Steps
-                    
-                </li>
-            </div>
-
-            <div id="listDiv">
-
-                <li>Marketing
-                    <br>
-                    Steps: 13698
-                    <br>
-                    Current MVP: adlskjfdlsk with 8522 Steps
-                    
-                </li>
-            </div>
+  
           
-       </ol>
+          <br>
+       
+                  </ol>
+       
       </div>
           
     </div>

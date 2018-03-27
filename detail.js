@@ -1,5 +1,5 @@
 const employeeDetails = [
-    {id: 1, name: "Kristen", challengeSteps: 1},
+    {id: 1, name: "Kristen", challengeSteps: 25472},
     {id: 2, name: "Matt", challengeSteps: 27654},
     {id: 3, name: "Ja'mez", challengeSteps: 38005},
     {id: 4, name:"Jennifer", challengeSteps: 98754},
@@ -26,7 +26,7 @@ function updateDetails(){
         return curr + next;
     }, 0);
     console.log(sum);
-    details[0].totalSteps = sum;
+    details[0].totalSteps = sum - 25472;
                             
 };
 updateDetails();
