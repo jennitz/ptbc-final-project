@@ -17,12 +17,12 @@ body {
 
 /* ----------home page */
 .navbar {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   font-family: sans-serif;
-  margin: auto;
+  margin: 0 auto;
   background-color: black;
   padding: 10px;
   height: 90px;
@@ -32,6 +32,8 @@ body {
 
 #loginlink, #logoutlink {
   float: right;
+  margin: 0 auto;
+  margin-right: 20px;
 }
 
 a {
@@ -71,37 +73,40 @@ a:hover {
 
  /* ----------blurb on home page */
 #blurb {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 0 auto;
-
+  display: block;
+  /* justify-content: center;
+  align-content: center; */
+  text-align: center;
+  bottom: 70px;
+  z-index: 2;
+  overflow: hidden;
 }
-.about{
+
+h2, h3 {
+  color: cornflowerblue;
+  font-family: sans-serif;
+}
+
+ /* ---------- about page */
+.about {
   background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("images/logo.png");
   /*opacity: 0.1;*/
-
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: 98%;
   background-position: center;
   display: flex;
   flex-flow: column;
-
-
+  color: midnightblue;
+  padding-top: 15px;
 }
-.content{
+
+.content {
 border-top: 10px;
 padding: 20px;
 }
-
 /*-------------------------------*/
 
-
-h2, h3 {
-  color: midnightblue;
-  font-family: sans-serif;
-}
 
 /* ----------footer */
 #footer {
@@ -142,6 +147,7 @@ padding-right: 0px;
   background: linear-gradient(rgb(110, 110, 110), rgb(219, 219, 219));
   /* border-radius: 20%; */
   border-style: double;
+  margin-right: 1%;
 }
 
 #challengesLayout {
@@ -153,36 +159,67 @@ padding-right: 0px;
 #globalRanking {
   /* border: solid 1px; */
   width: 300px;
-  background-color: cadetblue;
+  background: linear-gradient(rgb(84, 139, 141), rgb(119, 196, 199));
+  border-style: double;
+  border-color: midnightblue;
 }
 
 #h2Global {
   text-align: center;
+  color: black;
 }
 
 #cityRanking {
-  border: solid 1px;
+  /* border: solid 1px; */
   width: 300px;
-  background-color: cadetblue;
+  background: linear-gradient(rgb(84, 139, 141), rgb(119, 196, 199));
+  border-style: double;
+  border-color: midnightblue;
 }
 
 #h2City {
   text-align: center;
+  color: black;
 }
 
 #dailyRanking {
-  border: solid 1px;
+  /* border: solid 1px; */
   width: 300px;
-  background-color: cadetblue;
+  background: linear-gradient(rgb(84, 139, 141), rgb(119, 196, 199));
+  border-style: double;
+  border-color: midnightblue;
 }
 
 #h2Daily {
   text-align: center;
+  color: black;
+}
+
+hr {
+  border-color: midnightblue;
 }
 
 #compLogo {
   width: 50px;
   height: 50px;
+  border-radius: 40%;
+  border: solid 1px midnightblue;
+}
+
+#listDiv {
+  margin: 10% 0;
+}
+
+#challengeBg {
+  height: 350vh;
+  width: 100%;
+  background-color: rgb(21, 21, 94);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  margin: 0px;
+  
 }
 
 /* -----------dashboard page*/
@@ -200,7 +237,7 @@ padding-right: 0px;
   overflow: hidden;
   width: 300px;
   padding: 10px;
-  background-color: rgb(95, 158, 160, 0.5);
+  background-color: rgba(95, 158, 160, 0.5);
   color: black;
   border-radius: 12px;
 }
@@ -210,7 +247,7 @@ padding-right: 0px;
   border-radius: 50%;
   overflow: hidden;
   padding: 20px;
-  background-color: rgb(25, 25, 112, 0.75);
+  background-color: rgba(25, 25, 112, 0.75);
 }
 
 ul {
@@ -239,7 +276,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  background-color: rgb(95, 158, 160, 0.5);
+  background-color: rgba(95, 158, 160, 0.5);
   color: black;
   margin: 10px;
   min-width: 300px;
@@ -269,7 +306,7 @@ ul {
 .carousel {
   overflow-x: hidden;
   width: 100%;
-  height: 500px;  /*you may need to change this*/
+  height: 400px;  /*you may need to change this*/
 }
 
 .carousel-item {
@@ -368,4 +405,41 @@ ul {
     display: block;
     text-align: center;
   }
+}
+
+/* --------Log in Page  */
+#logindiv {
+  background: linear-gradient(rgb(146, 146, 146),rgb(226, 226, 226));
+  margin: auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  padding: 20%;
+
+}
+
+#innerLogDiv {
+  background-color: cadetblue;
+  width: 50%;
+  padding: 8%;
+  border-style: double;
+  border-radius: 5%;
+}
+
+#userLogBtn {
+  background-color: goldenrod;
+  text-align: center;
+}
+
+#userCancelBtn {
+  background-color: red;
+  text-align: center;
+}
+
+#enterInput {
+  width: 98%;
+}
+
+#passwordInput {
+  width: 98%;
 }

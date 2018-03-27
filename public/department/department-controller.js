@@ -1,6 +1,6 @@
 (function(){
   angular.module('app')
-    .controller('ChallengesController', function(APIFactory,DataFactory){
+    .controller('DepartmentController', function(APIFactory,DataFactory){
       var vm = this;
    
 
@@ -32,7 +32,7 @@
     };
     vm.getEmpDetails = function(){
       DataFactory.getEmp().then(function(result){
-          vm.emp = result.data;
+          vm.empData = result.data;
           console.log(result);
          
           

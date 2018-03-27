@@ -5,7 +5,9 @@
       return {
         setData,
         getData,
-        getDetails
+        getDetails,
+        patch,
+        getEmp
       };
       function setData(newData){
         data = newData;
@@ -16,8 +18,11 @@
       function getDetails(){
         return $http.get('/api/detail');
     }
-    function post(data){
-        return $http.post('/api/list', data);
+    function getEmp(data){
+        return $http.get('/api/employee');
     }
+    function patch(id, data){
+      return $http.patch('/api/detail/'+ id, data);
+  }
     });
 })();
