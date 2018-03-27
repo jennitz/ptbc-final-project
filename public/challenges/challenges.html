@@ -12,7 +12,7 @@
         
         <div id="challengesLayout">
           <div id="globalRanking">
-            <h2 id="h2Global">#GlobalLeaderboard</h2>
+            <h2 id="h2Global">#CityLeaderboard</h2>
             <hr>
            <ol>
               <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}}
@@ -29,14 +29,11 @@
           </div>
           
           <div id="cityRanking">
-            <h2 id="h2City">#CityLeaderboard</h2>
+            <h2 id="h2City">#MyCompanyLeaderboard</h2>
             <hr>
             <ol>
-                <li ng-repeat="name in $ctrl.company | orderBy:$ctrl.sorterFunc">{{name.name}} 
-                    <div id="compDiv">
-                        <img id="compLogo" src="{{name.logo}}"/>
-                    </div>
-                    Steps: {{name.totalSteps | number}}
+                <li ng-repeat="emp in $ctrl.emp | orderBy:$ctrl.sorterFunc">{{emp.name}} 
+                    Steps: {{emp.challengeSteps | number}}
                 </li>
                     
                 <br>
