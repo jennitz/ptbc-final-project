@@ -32,8 +32,9 @@ body {
 
 #loginlink, #logoutlink {
   float: right;
-  margin: 0 auto;
+  top: 0;
   margin-right: 20px;
+  position: relative;
 }
 
 a {
@@ -47,7 +48,6 @@ a:hover {
 }
 
 .active {
-  float: left;
   padding: 30px;
   font-size: 20px;
 }
@@ -197,7 +197,7 @@ hr {
 }
 
 #challengeBg {
-  height: 350vh;
+  height: 150vh;
   width: 100%;
   background-color: rgb(21, 21, 94);
   position: absolute;
@@ -206,7 +206,6 @@ hr {
   z-index: -1;
   margin: 0;
   bottom: 0;
-
 }
 
 /* -----------dashboard page*/
@@ -293,7 +292,7 @@ ul {
 .carousel {
   overflow-x: hidden;
   width: 100%;
-  height: 320px;  /*you may need to change this*/
+  height: 360px;  /*you may need to change this*/
 }
 
 /* ----------blurb on home page */
@@ -303,8 +302,8 @@ ul {
  background-color: rgba(25, 25, 112, 0.5);
  width: 75%;
  margin: 0 auto;
- /* bottom: 300px;
- left: 200px; */
+ bottom: 300px;
+ left: 200px;
  z-index: 2;
  position: relative;
 }
@@ -331,7 +330,8 @@ h2, h3 {
 }
 
 #picture {
-  width: 70%;
+  width: 50%;
+  height: 450px;
 }
 
 /*##Device = Desktops
@@ -401,6 +401,9 @@ h2, h3 {
   #squadGoalsImg {
     width: 100px;
   }
+  #loginlink, #logoutlink {
+    float: right;
+  }
   #fitbitlogo{
     display: flex;
     justify-content: center;
@@ -410,6 +413,14 @@ h2, h3 {
   #contact {
     display: block;
     text-align: center;
+  }
+  #challengeBg {
+    height: 500vh;
+    width: 300vh;
+  }
+  #picture {
+    width: 100%;
+    height: 100%;
   }
 }
 
